@@ -3,17 +3,21 @@
 
 ---
 
+## TOPIC DEFINITIONS
+
+### What is Exception Handling?
+**Exception handling** is a mechanism to respond to and recover from runtime errors (exceptions) without crashing the program. It uses `try/except/finally` blocks to catch errors, handle them gracefully, and optionally run cleanup code.
+
+**Purpose**: Prevent program crashes, provide meaningful error messages to users, release resources properly (files, connections), enable debugging with tracebacks, and build robust production systems.
+
+### What is Logging?
+**Logging** is the practice of recording events, messages, and data during program execution to a persistent destination (console, file, or external service). It replaces `print()` statements with a structured, configurable system.
+
+**Purpose**: Monitor application behavior, debug issues in production, track user actions, audit security events, and maintain records that can be analyzed later without modifying code.
+
+---
+
 ## EXCEPTION HANDLING
-
-**Definition**: Mechanism to handle runtime errors gracefully without crashing.
-
-**Why?**
-- Production apps must never crash silently
-- Provide meaningful error messages
-- Release resources properly (files, connections)
-- Enable debugging with tracebacks
-
-### Try/Except/Else/Finally
 
 ```python
 try:
@@ -58,14 +62,6 @@ class InsufficientFundsError(Exception):
 ---
 
 ## LOGGING
-
-**Definition**: Recording events during program execution for monitoring/debugging.
-
-**Why over print()?**
-- Severity levels (DEBUG, INFO, ERROR)
-- Multiple outputs (console, file)
-- Timestamps and context
-- Can be disabled/configured at runtime
 
 ### Logging Levels
 

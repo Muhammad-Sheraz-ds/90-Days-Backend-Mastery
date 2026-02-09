@@ -3,15 +3,21 @@
 
 ---
 
+## TOPIC DEFINITIONS
+
+### What is a Dataclass?
+A **dataclass** is a Python decorator (`@dataclass`) that automatically generates boilerplate code for classes primarily used to store data. It auto-creates `__init__`, `__repr__`, and `__eq__` methods based on class attributes with type annotations.
+
+**Purpose**: Eliminate repetitive code when creating data containers, make classes more readable, enable easy serialization to dicts/JSON, and provide a foundation for validation libraries like Pydantic.
+
+### What are Type Hints?
+**Type hints** are annotations that specify the expected data type of variables, function parameters, and return values. They are checked by static analyzers like `mypy` but are NOT enforced at runtime by Python.
+
+**Purpose**: Catch type-related bugs before runtime, enable IDE autocomplete and error detection, make code self-documenting, and define clear API contracts between functions/modules.
+
+---
+
 ## DATACLASSES
-
-**Definition**: A decorator that auto-generates `__init__`, `__repr__`, `__eq__` for data-holding classes.
-
-**Why use?**
-- Eliminates repetitive boilerplate code
-- Objects compare by values, not memory address
-- Clean string representation for debugging
-- Required foundation for Pydantic & FastAPI
 
 ```python
 from dataclasses import dataclass, field
@@ -46,14 +52,6 @@ class User:
 ---
 
 ## TYPE HINTS
-
-**Definition**: Annotations specifying expected types for variables, parameters, and return values.
-
-**Why use?**
-- `mypy` catches type bugs before runtime
-- IDE provides better autocomplete
-- Code documents itself
-- Defines clear API contracts
 
 ```python
 def get_user(id: int) -> dict[str, str]:

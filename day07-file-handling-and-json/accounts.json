@@ -1,0 +1,55 @@
+{
+  "accounts": {
+    "ACC-000001": {
+      "account_id": "ACC-000001",
+      "owner": "Alice",
+      "balance": 1150.0,
+      "transactions": [
+        {
+          "id": "ACC-000001-TXN-0000",
+          "type": "DEPOSIT",
+          "amount": 1000.0,
+          "balance_after": 1000.0,
+          "timestamp": "2026-02-09T18:19:31.558996",
+          "description": "Initial deposit"
+        },
+        {
+          "id": "ACC-000001-TXN-0001",
+          "type": "DEPOSIT",
+          "amount": 250.0,
+          "balance_after": 1250.0,
+          "timestamp": "2026-02-09T18:19:31.561925",
+          "description": "Bonus"
+        },
+        {
+          "id": "ACC-000001-TXN-0002",
+          "type": "WITHDRAWAL",
+          "amount": 100.0,
+          "balance_after": 1150.0,
+          "timestamp": "2026-02-09T18:19:31.563479",
+          "description": "Groceries"
+        }
+      ],
+      "created_at": "2026-02-09T18:19:31.558996",
+      "_transaction_counter": 2
+    },
+    "ACC-000002": {
+      "account_id": "ACC-000002",
+      "owner": "Bob",
+      "balance": 500.0,
+      "transactions": [
+        {
+          "id": "ACC-000002-TXN-0000",
+          "type": "DEPOSIT",
+          "amount": 500.0,
+          "balance_after": 500.0,
+          "timestamp": "2026-02-09T18:19:31.558996",
+          "description": "Initial deposit"
+        }
+      ],
+      "created_at": "2026-02-09T18:19:31.558996",
+      "_transaction_counter": 0
+    }
+  },
+  "_account_counter": 2
+}

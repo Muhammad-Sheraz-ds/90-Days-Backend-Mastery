@@ -40,6 +40,7 @@ def setup_logging() -> logging.Logger:
         '%(asctime)s | %(levelname)-8s | %(message)s',
         datefmt='%H:%M:%S'
     )
+    
     console_handler.setFormatter(console_format)
     
     # File handler - DEBUG level (more detail)

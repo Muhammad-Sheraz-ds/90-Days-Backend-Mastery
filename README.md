@@ -19,6 +19,23 @@ prompt2:
 
 now create resvison.md file that file should be having summary of all .md files conatining only impoatnmt things like definetions impoart concpets, why we use this etc and focus quality as well as quantity and purpose is that when i read tis in 2 minutes u can cover all impaostant concpets in mind
 
+
+prompt 03:
+
+in day 05 & 06
+
+
+fisrt nmaed their directories correct name
+
+daya- no + name acocridung to topic
+
+second shange is that add defination of each topic so that by definatio i can undetsad the complete what is this and wjats the oyrpose 
+
+ 
+
+
+
+
 prompt:
 
 
