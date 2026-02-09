@@ -8,6 +8,13 @@
 - **Tools Required:** VS Code, Git, Python 3.11+, PostgreSQL (local or Docker)
 - **End Goal:** Portfolio-ready backend engineer with 3 production-grade projects
 
+cmnds:
+
+
+git add .
+git commit -m "Done Day: "
+git push origin main
+
 
 
 prompt:
