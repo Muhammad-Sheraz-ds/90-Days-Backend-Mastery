@@ -1,0 +1,27 @@
+2026-02-09 16:13:35 | INFO     | bank | main:486 | ==================================================
+2026-02-09 16:13:35 | INFO     | bank | main:487 | Bank System Demo Started
+2026-02-09 16:13:35 | INFO     | bank | main:488 | ==================================================
+2026-02-09 16:13:35 | INFO     | bank | create_account:314 | Creating account for: Alice
+2026-02-09 16:13:35 | INFO     | bank | create_account:338 | Account created: id=ACC-000001, owner=Alice, initial_balance=$1000.00
+2026-02-09 16:13:35 | INFO     | bank | create_account:314 | Creating account for: Bob
+2026-02-09 16:13:35 | INFO     | bank | create_account:338 | Account created: id=ACC-000002, owner=Bob, initial_balance=$500.00
+2026-02-09 16:13:35 | DEBUG    | bank | deposit:184 | Deposit attempt: account=ACC-000001, amount=$250.00
+2026-02-09 16:13:35 | INFO     | bank | deposit:201 | Deposit successful: account=ACC-000001, amount=$250.00, new_balance=$1250.00
+2026-02-09 16:13:35 | DEBUG    | bank | withdraw:227 | Withdrawal attempt: account=ACC-000001, amount=$100.00, balance=$1250.00
+2026-02-09 16:13:35 | INFO     | bank | withdraw:250 | Withdrawal successful: account=ACC-000001, amount=$100.00, new_balance=$1150.00
+2026-02-09 16:13:35 | INFO     | bank | transfer:384 | Transfer attempt: from=ACC-000001, to=ACC-000002, amount=$200.00
+2026-02-09 16:13:35 | DEBUG    | bank | withdraw:227 | Withdrawal attempt: account=ACC-000001, amount=$200.00, balance=$1150.00
+2026-02-09 16:13:35 | INFO     | bank | withdraw:250 | Withdrawal successful: account=ACC-000001, amount=$200.00, new_balance=$950.00
+2026-02-09 16:13:35 | DEBUG    | bank | deposit:184 | Deposit attempt: account=ACC-000002, amount=$200.00
+2026-02-09 16:13:35 | INFO     | bank | deposit:201 | Deposit successful: account=ACC-000002, amount=$200.00, new_balance=$700.00
+2026-02-09 16:13:35 | INFO     | bank | transfer:404 | Transfer successful: from=ACC-000001, to=ACC-000002, amount=$200.00
+2026-02-09 16:13:35 | INFO     | bank | create_account:314 | Creating account for: Charlie
+2026-02-09 16:13:35 | INFO     | bank | create_account:338 | Account created: id=ACC-000001, owner=Charlie, initial_balance=$100.00
+2026-02-09 16:13:35 | DEBUG    | bank | withdraw:227 | Withdrawal attempt: account=ACC-000001, amount=$500.00, balance=$100.00
+2026-02-09 16:13:35 | ERROR    | bank | withdraw:257 | Withdrawal failed: Insufficient funds: balance $100.00, attempted $500.00, short $400.00
+2026-02-09 16:13:35 | DEBUG    | bank | deposit:184 | Deposit attempt: account=ACC-000001, amount=$-50.00
+2026-02-09 16:13:35 | ERROR    | bank | deposit:208 | Deposit failed: Invalid deposit: amount cannot be negative ($-50.00)
+2026-02-09 16:13:35 | DEBUG    | bank | deposit:184 | Deposit attempt: account=ACC-000001, amount=$100.00
+2026-02-09 16:13:35 | ERROR    | bank | deposit:208 | Deposit failed: Account is inactive: ACC-000001
+2026-02-09 16:13:35 | INFO     | bank | main:494 | All demos completed successfully
+2026-02-09 16:13:35 | INFO     | bank | main:504 | Bank System Demo Ended
